@@ -24,27 +24,48 @@
 			container: 'map',
 			style: 'mapbox://styles/mapbox/streets-v11'
 		});
-		 
-		var img1 = new Image(30, 30)
 
 		map.on('load', function() {
 			map.loadImage('https://raw.githubusercontent.com/vdthatte/map/master/images/1.png', function(error, image) {
 			
 				if (error) throw error;
-
-				img1 = image
 				
-				map.addImage('cat', image);
+				map.addImage('1', image);
 				
 			});
 
-			map.loadImage('images/1.png', function(error, image) {
+			map.loadImage('https://raw.githubusercontent.com/vdthatte/map/master/images/2.png', function(error, image) {
 			
 				if (error) throw error;
-
-				img1 = image
 				
-				map.addImage('dog', image);
+				map.addImage('2', image);
+				
+			});
+
+
+			map.loadImage('https://raw.githubusercontent.com/vdthatte/map/master/images/3.png', function(error, image) {
+			
+				if (error) throw error;
+				
+				map.addImage('3', image);
+				
+			});
+
+
+			map.loadImage('https://raw.githubusercontent.com/vdthatte/map/master/images/4.png', function(error, image) {
+			
+				if (error) throw error;
+				
+				map.addImage('4', image);
+				
+			});
+
+
+			map.loadImage('https://raw.githubusercontent.com/vdthatte/map/master/images/5.png', function(error, image) {
+			
+				if (error) throw error;
+				
+				map.addImage('5', image);
 				
 			});
 
@@ -65,7 +86,9 @@
 									},
 									"properties": {
 										"title": "Mapbox DC",
-										"icon": "cat"
+										"icon": "1",
+										"width": 100,
+										"height": 100
 									}
 								}, 
 
@@ -73,11 +96,27 @@
 									"type": "Feature",
 									"geometry": {
 										"type": "Point",
-										"coordinates": [-122.414, 37.776]
+										"coordinates": [-120.814, 37.776]
 									},
 									"properties": {
 										"title": "Mapbox SF",
-										"icon": "harbor-15"
+										"icon": "2",
+										"width": 10,
+										"height": 10
+									}
+								}, 
+
+								{	
+									"type": "Feature",
+									"geometry": {
+										"type": "Point",
+										"coordinates": [-122.514, 37.776]
+									},
+									"properties": {
+										"title": "Mapbox SF",
+										"icon": "3",
+										"width": 10,
+										"height": 10
 									}
 								}
 							]
